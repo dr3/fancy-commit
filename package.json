@@ -1,10 +1,10 @@
 {
   "name": "fancy-commit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ohhh so fancy. Super simple cli for writing fancy commit messages",
   "main": "index.js",
   "bin": {
-    "lightdiff": "./index.js"
+    "fancy-commit": "./index.js"
   },
   "author": {
     "name": "Drew McMillan",
