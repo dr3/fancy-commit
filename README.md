@@ -16,8 +16,10 @@ Ohhh so fancy. Super simple cli for writing fancy commit messages
 ```
 npm install -g fancy-commit
 ```
+## Defaults
+Currently this package uses GPG signing by default. While this isnt ideal, and there is [an issue to make it optional](https://github.com/dr3/fancy-commit/issues/2), it was selected as the default because everyone should use it. yes, even you 🙈
 
-### 🙈 Alias
+## 🙈 Alias
 I chose the name `fancy-commit` as it was nice and wouldn't clash with any other cli tool. I recomend aliasing it to something else in your command line. For bash I add the following line to my `.bashrc` file 😊
 ```
 alias gc='fancy-commit'
