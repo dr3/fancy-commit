@@ -1,4 +1,4 @@
-<h1 align="center">:sparkles: fancy-commit :sparkles:</h1>
+<h1 align="center">✨ fancy-commit ✨</h1>
 
 <div align="center">
 
