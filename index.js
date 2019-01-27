@@ -2,6 +2,7 @@
 
 const inquirer = require('inquirer');
 const shell = require('shelljs');
+const chalk = require('chalk');
 
 const typeKVP = {
   'None': '',
@@ -51,8 +52,12 @@ const handleAnswers = answers => {
 
 const precheck = () => {
   if (shell.exec('git rev-parse --is-inside-work-tree', {silent:true}).code !== 0) {
-    shell.echo('Error: Not currently in a git repo!');
+    console.log(chalk.red('Error: Not currently in a git repo!'));
     shell.exit(1);
+  }
+
+  if (shell.exec('git diff-index --quiet HEAD --', {silent:true}).code === 0) {
+    console.log(chalk.red("\nPssst! btw there aren't any changes! 😱\n"));
   }
 
   return true;

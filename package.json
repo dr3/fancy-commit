@@ -1,6 +1,6 @@
 {
   "name": "fancy-commit",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Ohhh so fancy. Super simple cli for writing fancy commit messages",
   "main": "index.js",
   "bin": {
@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.2",
     "inquirer": "^6.2.1",
     "shelljs": "^0.8.3"
   },
