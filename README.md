@@ -1,7 +1,7 @@
 # fancy-commit
 Ohhh so fancy. Super simple cli for writing fancy commit messages
 
-![image](https://user-images.githubusercontent.com/11341355/51806392-5ab57100-2271-11e9-9396-4c75bde730ee.png)
+![example gif](https://user-images.githubusercontent.com/11341355/51806401-6c971400-2271-11e9-8185-1c3bde5d334d.gif)
 
 ## 🚀 Install
 ```
