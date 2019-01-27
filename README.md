@@ -1,6 +1,8 @@
 # fancy-commit
 Ohhh so fancy. Super simple cli for writing fancy commit messages
 
+![example gif](https://user-images.githubusercontent.com/11341355/51806401-6c971400-2271-11e9-8185-1c3bde5d334d.gif)
+
 ## 🚀 Install
 ```
 npm install -g fancy-commit
