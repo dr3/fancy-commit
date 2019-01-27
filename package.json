@@ -1,6 +1,6 @@
 {
   "name": "fancy-commit",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Ohhh so fancy. Super simple cli for writing fancy commit messages",
   "main": "index.js",
   "bin": {
@@ -10,9 +10,9 @@
     "name": "Drew McMillan",
     "url": "https://drew.mx"
   },
-  "homepage": "https://github.com/drewmcmillan/fancy-commit",
+  "homepage": "https://github.com/dr3/fancy-commit",
   "bugs": {
-    "url": "https://github.com/drewmcmillan/fancy-commit/issues"
+    "url": "https://github.com/dr3/fancy-commit/issues"
   },
   "license": "MIT",
   "dependencies": {
