@@ -1,0 +1,29 @@
+{
+  "name": "fancy-commit",
+  "version": "0.1.0",
+  "description": "Ohhh so fancy. Super simple cli for writing fancy commit messages",
+  "main": "index.js",
+  "bin": {
+    "lightdiff": "./index.js"
+  },
+  "author": {
+    "name": "Drew McMillan",
+    "url": "https://drew.mx"
+  },
+  "homepage": "https://github.com/drewmcmillan/fancy-commit",
+  "bugs": {
+    "url": "https://github.com/drewmcmillan/fancy-commit/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.2.1",
+    "shelljs": "^0.8.3"
+  },
+  "keywords": [
+    "fancy",
+    "commit",
+    "git",
+    "message",
+    "emoji"
+  ]
+}
