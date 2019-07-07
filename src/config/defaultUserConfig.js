@@ -1,4 +1,5 @@
 const defaultUserConfig = {
+  version: 1,
   prompts: [
     { text: 'Nossne' },
     { text: 'Feature', emoji: '🚀' },
