@@ -50,15 +50,16 @@ const defaultCommand = () => {
     },
   ];
 
-  const isAsk = val => val === 'ask';
+  const isAsk = val => val.includes('ask');
   const isAlways = val => val === 'always';
+  const getDefault = val => val === 'ask_y' ? 'y' : 'n'; // eslint-disable-line no-confusing-arrow
 
   if (isAsk(config.skipVerifyingCommit)) {
     prompts.push({
       type: 'input',
       name: 'verify',
       message: 'Do you want to skip verifying?',
-      default: () => 'n',
+      default: () => getDefault(config.skipVerifyingCommit),
       filter: val => val.toLowerCase() === 'y',
     });
   }
@@ -68,7 +69,7 @@ const defaultCommand = () => {
       type: 'input',
       name: 'empty',
       message: 'Do you want to allow an empty commit?',
-      default: () => 'n',
+      default: () => getDefault(config.allowEmptyCommit),
       filter: val => val.toLowerCase() === 'y',
     });
   }
@@ -78,7 +79,7 @@ const defaultCommand = () => {
       type: 'input',
       name: 'sign',
       message: 'Do you want to sign this commit?',
-      default: () => 'n',
+      default: () => getDefault(config.signCommits),
       filter: val => val.toLowerCase() === 'y',
     });
   }
@@ -107,6 +108,6 @@ const defaultCommand = () => {
   if (precheck()) {
     inquirer.prompt(prompts).then(handleAnswers);
   }
-}
+};
 
 export default defaultCommand;

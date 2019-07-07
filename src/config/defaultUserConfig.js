@@ -1,7 +1,7 @@
 const defaultUserConfig = {
   version: 1,
   prompts: [
-    { text: 'Nossne' },
+    { text: 'None' },
     { text: 'Feature', emoji: '🚀' },
     { text: 'Bug Fix', emoji: '🔧' },
     { text: 'Documentation', emoji: '📝' },
@@ -11,9 +11,8 @@ const defaultUserConfig = {
     { text: 'Code Review', emoji: '🕺' },
     { text: 'Fun', emoji: '🎉' },
   ],
-  allowEmptyCommit: 'ask',
-  skipVerifyingCommit: 'ask',
-  forceCommit: 'ask',
+  skipVerifyingCommit: 'ask_n',
+  allowEmptyCommit: 'ask_n',
   signCommits: 'always',
   warnNoChanges: true,
   warnInsideWorkingTree: true,
