@@ -16,11 +16,51 @@ Ohhh so fancy. Super simple cli for writing fancy commit messages
 ```
 npm install -g fancy-commit
 ```
-## 🙈 Defaults
-Currently this package uses GPG signing by default. While this isnt ideal, and there is [an issue to make it optional](https://github.com/dr3/fancy-commit/issues/2), it was selected as the default because everyone should use it. yes, even you 🙈
 
 ## 🦁 Alias
 I chose the name `fancy-commit` as it was nice and wouldn't clash with any other cli tool. I recomend aliasing it to something else in your command line. For bash I add the following line to my `.bashrc` file 😊
 ```
 alias gc='fancy-commit'
 ```
+
+## 🤟 Usage
+
+The basic functionality of this package can be run simply via `fancy-commit`. On its own, this command will use default values for all settings. This can be overwritten via config however!
+
+## 🎩 Commands
+
+### - `fancy-commit setup`
+
+This command will write a config file for you to change. It will be located in your home directory and called `.fancy_commit`.
+
+### - `fancy-commit reset`
+
+Mess up your config file? This command will reset it to the defaults.
+
+### - `fancy-commit clean`
+
+Don't need custom config? Run this command to delete your `.fancy_commit` file.
+
+
+## ⚙️ Config
+
+fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
+
+| config key | description | default | possible values |
+|------------|-------------|---------|-----------------|
+| `prompts`  | An array of commit prompts for you to use. | see [here](https://github.com/dr3/fancy-commit/blob/latest/src/config/defaultUserConfig.js#L3) | Array items be in the format of `{ text: 'Feature', emoji: '🚀' }` |
+| `skipVerifyingCommit` | Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-commit checks. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#-prompt-config)) |
+| `allowEmptyCommit`| Allow commits to be empty. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#-prompt-config)) |
+| `signCommits`| Sign your git commits. Most commonly used to GPG sign your commits. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#-prompt-config)) |
+| `warnNoChanges` | Warn you if your trying to make a commit with no changes. | `true` | `true`, `false` |
+| `mustBeInsideWorkingTree` | Exit `fancy-commit` if youre not inside a git working tree. | `true` | `true`, `false` |
+| `useGithubEmoji` | Use github emoji markup in commit messages in place of Unicode emoji chracters. e.g. `:dog:` instead of 🐶. | `true` | `true`, `false` |
+
+### ⁉️ Prompt config
+
+Prompt config has 4 possible values 
+
+- `always` - Don't Ask, just always do it.
+- `never` - Don't Ask, but never do it.
+- `ask_y` - Ask every time, defaulting to `'y'` (yes).
+- `ask_n` - Ask every time, defaulting to `'n'` (no).
