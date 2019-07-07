@@ -55,7 +55,7 @@ Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-com
 
 | default | possible values                     |
 |---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` |
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
 
 #### - `allowEmptyCommit`
 
@@ -63,7 +63,7 @@ Allow commits to be empty.
 
 | default | possible values                     |
 |---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` |
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
 
 #### - `signCommits`
 
@@ -71,7 +71,7 @@ Sign your git commits. Most commonly used to GPG sign your commits.
 
 | default  | possible values                     |
 |----------|-------------------------------------|
-| `always` | `always`, `never`, `ask_y`, `ask_n` |
+| `always` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
 
 #### - `warnNoChanges`
 
@@ -97,3 +97,13 @@ Use github emoji markup in commit messages in place of Unicode emoji chracters. 
 |---------|-----------------|
 | `true`  | `true`, `false` |
 
+---
+
+### Prompt config
+
+Prompt config has 4 possible values 
+
+- `always` - Don't Ask, just always do it.
+- `never` - Don't Ask, but never do it.
+- `ask_y` - Ask every time, defaulting to `'y'` (yes).
+- `ask_n` - Ask every time, defaulting to `'n'` (no).
