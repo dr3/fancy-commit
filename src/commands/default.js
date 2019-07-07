@@ -82,7 +82,7 @@ const defaultCommand = () => {
       default: () => getDefault(config.signCommits),
       filter: val => val.toLowerCase() === 'y',
     });
-  } 
+  }
 
   const handleAnswers = (answers) => {
     const skipVerifyingCommit = answers.verify || isAlways(config.skipVerifyingCommit) ? ' --no-verify' : '';

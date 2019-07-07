@@ -23,11 +23,11 @@ I chose the name `fancy-commit` as it was nice and wouldn't clash with any other
 alias gc='fancy-commit'
 ```
 
-## Usage
+## 🤟 Usage
 
 The basic functionality of this package can be run simply via `fancy-commit`. On its own, this command will use default values for all settings. This can be overwritten via config however!
 
-## Commands
+## 🎩 Commands
 
 ### - `fancy-commit setup`
 
@@ -41,13 +41,8 @@ Mess up your config file? This command will reset it to the defaults.
 
 Don't need custom config? Run this command to delete your `.fancy_commit` file.
 
-&nbsp;
 
----
-
-&nbsp;
-
-## Config
+## ⚙️ Config
 
 fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
 
@@ -61,7 +56,7 @@ fancy-commit is built on config and offers a whole bunch of settings you can cha
 | `mustBeInsideWorkingTree` | Exit `fancy-commit` if youre not inside a git working tree. | `true` | `true`, `false` |
 | `useGithubEmoji` | Use github emoji markup in commit messages in place of Unicode emoji chracters. e.g. `:dog:` instead of 🐶. | `true` | `true`, `false` |
 
-### Prompt config
+### ⁉️ Prompt config
 
 Prompt config has 4 possible values 
 
