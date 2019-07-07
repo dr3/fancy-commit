@@ -55,7 +55,7 @@ Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-com
 
 | default | possible values                     |
 |---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
 
 #### - `allowEmptyCommit`
 
@@ -63,7 +63,7 @@ Allow commits to be empty.
 
 | default | possible values                     |
 |---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
 
 #### - `signCommits`
 
@@ -71,7 +71,7 @@ Sign your git commits. Most commonly used to GPG sign your commits.
 
 | default  | possible values                     |
 |----------|-------------------------------------|
-| `always` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#--prompt-config)) |
+| `always` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
 
 #### - `warnNoChanges`
 
