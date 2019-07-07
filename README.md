@@ -53,7 +53,7 @@ fancy-commit is built on config and offers a whole bunch of settings you can cha
 
 | config key | description | default | possible values |
 |------------|-------------|---------|-----------------|
-| `prompts`  | An array of commit prompts for you to use. | n/a | Array items be in the format of `{ text: 'Feature', emoji: '🚀' }` |
+| `prompts`  | An array of commit prompts for you to use. | see [here](https://github.com/dr3/fancy-commit/blob/latest/src/config/defaultUserConfig.js#L3) | Array items be in the format of `{ text: 'Feature', emoji: '🚀' }` |
 | `skipVerifyingCommit` | Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-commit checks. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
 | `allowEmptyCommit`| Allow commits to be empty. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
 | `signCommits`| Sign your git commits. Most commonly used to GPG sign your commits. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
