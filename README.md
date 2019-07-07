@@ -16,11 +16,84 @@ Ohhh so fancy. Super simple cli for writing fancy commit messages
 ```
 npm install -g fancy-commit
 ```
-## 🙈 Defaults
-Currently this package uses GPG signing by default. While this isnt ideal, and there is [an issue to make it optional](https://github.com/dr3/fancy-commit/issues/2), it was selected as the default because everyone should use it. yes, even you 🙈
 
 ## 🦁 Alias
 I chose the name `fancy-commit` as it was nice and wouldn't clash with any other cli tool. I recomend aliasing it to something else in your command line. For bash I add the following line to my `.bashrc` file 😊
 ```
 alias gc='fancy-commit'
 ```
+
+## Usage
+
+The basic functionality of this package can be run simply via `fancy-commit`. On its own, this command will use default values for all settings. This can be overwritten via config however!
+
+## Commands
+
+### - `fancy-commit setup`
+
+This command will write a config file for you to change. It will be located in your home directory and called `.fancy_commit`.
+
+### - `fancy-commit reset`
+
+Mess up your config file? This command will reset it to the defaults.
+
+### - `fancy-commit clean`
+
+Don't need custom config? Run this command to delete your `.fancy_commit` file.
+
+## Config
+
+fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
+
+#### - `prompts`
+
+An array of commit prompts for you to use. Array items be in the format of `{ text: 'Feature', emoji: '🚀' }`.
+
+#### - `skipVerifyingCommit`
+
+Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-commit checks.
+
+| default | possible values                     |
+|---------|-------------------------------------|
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` |
+
+#### - `allowEmptyCommit`
+
+Allow commits to be empty.
+
+| default | possible values                     |
+|---------|-------------------------------------|
+| `ask_n` | `always`, `never`, `ask_y`, `ask_n` |
+
+#### - `signCommits`
+
+Sign your git commits. Most commonly used to GPG sign your commits.
+
+| default  | possible values                     |
+|----------|-------------------------------------|
+| `always` | `always`, `never`, `ask_y`, `ask_n` |
+
+#### - `warnNoChanges`
+
+Warn you if your trying to make a commit with no changes.
+
+| default | possible values |
+|---------|-----------------|
+| `true`  | `true`, `false` |
+
+#### - `mustBeInsideWorkingTree`
+
+Exit `fancy-commit` if youre not inside a git working tree.
+
+| default | possible values |
+|---------|-----------------|
+| `true`  | `true`, `false` |
+
+#### - `useGithubEmoji`
+
+Use github emoji markup in commit messages in place of Unicode emoji chracters. e.g. `:dog:` instead of 🐶.
+
+| default | possible values |
+|---------|-----------------|
+| `true`  | `true`, `false` |
+

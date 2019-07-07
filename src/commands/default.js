@@ -82,7 +82,7 @@ const defaultCommand = () => {
       default: () => getDefault(config.signCommits),
       filter: val => val.toLowerCase() === 'y',
     });
-  }
+  } 
 
   const handleAnswers = (answers) => {
     const skipVerifyingCommit = answers.verify || isAlways(config.skipVerifyingCommit) ? ' --no-verify' : '';
@@ -93,7 +93,7 @@ const defaultCommand = () => {
   };
 
   const precheck = () => {
-    if (config.warnInsideWorkingTree && shell.exec('git rev-parse --is-inside-work-tree', { silent: true }).code !== 0) {
+    if (config.mustBeInsideWorkingTree && shell.exec('git rev-parse --is-inside-work-tree', { silent: true }).code !== 0) {
       console.log(chalk.red('Error: Not currently in a git repo!'));
       shell.exit(1);
     }

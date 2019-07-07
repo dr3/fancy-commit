@@ -10,6 +10,9 @@ switch (process.argv[2]) {
   case 'help':
     helpCommand();
     break;
+  case 'setup':
+    resetCommand();
+    break;
   case 'reset':
     resetCommand();
     break;

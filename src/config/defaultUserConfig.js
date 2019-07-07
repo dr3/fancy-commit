@@ -15,7 +15,7 @@ const defaultUserConfig = {
   allowEmptyCommit: 'ask_n',
   signCommits: 'always',
   warnNoChanges: true,
-  warnInsideWorkingTree: true,
+  mustBeInsideWorkingTree: true,
   useGithubEmoji: true,
 };
 
