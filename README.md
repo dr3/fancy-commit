@@ -51,61 +51,15 @@ Don't need custom config? Run this command to delete your `.fancy_commit` file.
 
 fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
 
-#### - `prompts`
-
-An array of commit prompts for you to use. Array items be in the format of `{ text: 'Feature', emoji: '🚀' }`.
-
-#### - `skipVerifyingCommit`
-
-Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-commit checks.
-
-| default | possible values                     |
-|---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
-
-#### - `allowEmptyCommit`
-
-Allow commits to be empty.
-
-| default | possible values                     |
-|---------|-------------------------------------|
-| `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
-
-#### - `signCommits`
-
-Sign your git commits. Most commonly used to GPG sign your commits.
-
-| default  | possible values                     |
-|----------|-------------------------------------|
-| `always` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
-
-#### - `warnNoChanges`
-
-Warn you if your trying to make a commit with no changes.
-
-| default | possible values |
-|---------|-----------------|
-| `true`  | `true`, `false` |
-
-#### - `mustBeInsideWorkingTree`
-
-Exit `fancy-commit` if youre not inside a git working tree.
-
-| default | possible values |
-|---------|-----------------|
-| `true`  | `true`, `false` |
-
-#### - `useGithubEmoji`
-
-Use github emoji markup in commit messages in place of Unicode emoji chracters. e.g. `:dog:` instead of 🐶.
-
-| default | possible values |
-|---------|-----------------|
-| `true`  | `true`, `false` |
-
-&nbsp;
-
----
+| config key | description | default | possible values |
+|------------|-------------|---------|-----------------|
+| `prompts`  | An array of commit prompts for you to use. | n/a | Array items be in the format of `{ text: 'Feature', emoji: '🚀' }` |
+| `skipVerifyingCommit` | Skip verifying your commit. Adds `--no-verify` to the commit to skip and pre-commit checks. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
+| `allowEmptyCommit`| Allow commits to be empty. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
+| `signCommits`| Sign your git commits. Most commonly used to GPG sign your commits. | `ask_n` | `always`, `never`, `ask_y`, `ask_n` ([prompt config](https://github.com/dr3/fancy-commit#prompt-config)) |
+| `warnNoChanges` | Warn you if your trying to make a commit with no changes. | `true` | `true`, `false` |
+| `mustBeInsideWorkingTree` | Exit `fancy-commit` if youre not inside a git working tree. | `true` | `true`, `false` |
+| `useGithubEmoji` | Use github emoji markup in commit messages in place of Unicode emoji chracters. e.g. `:dog:` instead of 🐶. | `true` | `true`, `false` |
 
 ### Prompt config
 
