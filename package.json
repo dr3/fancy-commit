@@ -1,6 +1,6 @@
 {
   "name": "fancy-commit",
-  "version": "0.2.5",
+  "version": "1.0.0-alpha.0",
   "description": "Ohhh so fancy. Super simple cli for writing fancy commit messages",
   "main": "./dist/index.js",
   "bin": {
@@ -18,6 +18,10 @@
   "homepage": "https://github.com/dr3/fancy-commit",
   "bugs": {
     "url": "https://github.com/dr3/fancy-commit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dr3/fancy-commit.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -38,12 +42,12 @@
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-json": "^1.4.0",
-    "eslint-plugin-prettier": "^3.1.0"
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   }
 }
