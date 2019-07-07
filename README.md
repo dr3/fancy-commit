@@ -41,6 +41,12 @@ Mess up your config file? This command will reset it to the defaults.
 
 Don't need custom config? Run this command to delete your `.fancy_commit` file.
 
+&nbsp;
+
+---
+
+&nbsp;
+
 ## Config
 
 fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
@@ -96,6 +102,8 @@ Use github emoji markup in commit messages in place of Unicode emoji chracters. 
 | default | possible values |
 |---------|-----------------|
 | `true`  | `true`, `false` |
+
+&nbsp;
 
 ---
 
