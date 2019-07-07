@@ -1,4 +1,4 @@
-const defaultConfig = {
+const defaultUserConfig = {
   prompts: [
     { text: 'Nossne' },
     { text: 'Feature', emoji: '🚀' },
@@ -19,4 +19,4 @@ const defaultConfig = {
   useGithubEmoji: true,
 };
 
-export default defaultConfig;
+export default defaultUserConfig;
