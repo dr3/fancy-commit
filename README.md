@@ -5,6 +5,7 @@ Ohhh so fancy. Super simple cli for writing fancy commit messages
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/dr3/fancy-commit)
 
+
 </div>
 
 ![example gif](https://user-images.githubusercontent.com/11341355/51806401-6c971400-2271-11e9-8185-1c3bde5d334d.gif)
