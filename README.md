@@ -40,7 +40,6 @@ Mess up your config file? This command will reset it to the defaults.
 
 Don't need custom config? Run this command to delete your `.fancy_commit` file.
 
-
 ## ⚙️ Config
 
 fancy-commit is built on config and offers a whole bunch of settings you can change to your liking.
