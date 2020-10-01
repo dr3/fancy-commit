@@ -22,7 +22,6 @@ I chose the name `fancy-commit` as it was nice and wouldn't clash with any other
 alias gc='fancy-commit'
 ```
 
-
 ## 🤟 Usage
 
 The basic functionality of this package can be run simply via `fancy-commit`. On its own, this command will use default values for all settings. This can be overwritten via config however!
