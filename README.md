@@ -1,5 +1,4 @@
 <h1 align="center">✨ fancy-commit ✨</h1>
-
 <div align="center">
 
 Ohhh so fancy. Super simple cli for writing fancy commit messages
